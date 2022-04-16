@@ -1,0 +1,206 @@
+
+.staff {
+    background-color: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.staff__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.17;
+    // text-align: center;
+    // letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #212121;
+}
+.staff__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.staff__item {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    // margin-right: 30px;
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+}
+// .staff__item:last-child {
+//     margin-right: 0;
+// }
+.staff__conteiner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.staff__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+}
+.staff__text {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}
+.society-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+.society-list__item {
+    width: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px ;
+    }  
+}
+// .society-list__item:not(:last-child) {
+//     margin-right: 10px ;
+// }
+.society-list__link {
+    width: 44px;
+    height: 44px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: $active_color;
+    }
+    &:hover .society-list__icon {
+        fill: #FFFFFF;
+    }
+    &:focus {
+        background-color: $active_color;
+    }
+    &:focus .society-list__icon {
+        fill: #FFFFFF;
+    }   
+}
+.society-list__icon {
+    display: flex;
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// .society-list__link:hover {
+//     background-color: #2196F3;
+// }
+// .society-list__link:hover .society-list__icon {
+//     fill: #FFFFFF;
+// }
+// .society-list__link:focus {
+//     background-color: #2196F3;
+// }
+// .society-list__link:focus .society-list__icon {
+//     fill: #FFFFFF;
+// }
+.clients {
+    background-color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.clients__title { 
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.17;
+    // text-align: center;
+    // letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    // justify-content:space-between;
+}
+.clients__item {
+    flex-basis: calc(100% / 4 - 15px);
+    margin: 15px;
+   
+    
+    // width: 210px;
+    // height: 92px;
+    /* border: 2px solid black; */
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+}
+// .clients__item:last-child {
+//     margin-right: 0;
+// }
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+     
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        border: 1px solid $active_color; 
+    }
+    &:hover .clients__icon {
+        fill: $active_color;
+        
+    }
+    &:focus {
+        border: 1px solid $active_color; 
+    }
+    &:focus .clients__icon {
+        fill: $active_color;   
+    }
+}
+// .clients__link:hover {
+//     border: 1px solid #2196F3; 
+// }
+// .clients__link:hover .clients__icon {
+//     fill: #2196F3;
+    
+// }
+// .clients__link:focus {
+//     border: 1px solid #2196F3; 
+// }
+// .clients__link:focus .clients__icon {
+//     fill: #2196F3;   
+// }
+.clients__icon {
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
