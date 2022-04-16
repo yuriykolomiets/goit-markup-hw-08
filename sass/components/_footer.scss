@@ -1,4 +1,5 @@
 .page-footer {
+    @media screen and (max-width: 795px){
     background-color: $color_page-footer;
     color: #FFFFFF;
     padding-top: 60px;
@@ -6,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: flex-start;
+}
 }
 .logo-second {
     font-family: 'Raleway';
