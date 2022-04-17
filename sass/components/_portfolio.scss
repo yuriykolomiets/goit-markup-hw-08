@@ -1,7 +1,10 @@
 .example {
-    width: 480px;
+    // width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }  
 }
 .navigation-list {
     display: flex;

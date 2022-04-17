@@ -16,7 +16,6 @@ p {
 body {
     color: $text-color;
     font-family: 'Roboto';
-
 }
 ul {
     list-style: none;
@@ -33,20 +32,16 @@ h3 {
     text-transform: uppercase;
 }
 .conteiner {
+    // width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (max-width: 796px) {
-        width: 414px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }  
 } 
 img {
     display: block;
-    @media screen and (max-width: 796px) {
-        max-width: 100%; 
-    }
+    max-width: 100%;   
 }

@@ -1,13 +1,14 @@
 .page-footer {
-    @media screen and (max-width: 795px){
     background-color: $color_page-footer;
     color: #FFFFFF;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }  
     // justify-content: flex-start;
-}
 }
 .logo-second {
     font-family: 'Raleway';
@@ -39,7 +40,9 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }  
     
     
     // justify-content: flex-start;
