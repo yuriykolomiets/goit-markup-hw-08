@@ -33,13 +33,20 @@ h3 {
     text-transform: uppercase;
 }
 .conteiner {
-    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+    @media screen and (max-width: 796px) {
+        width: 414px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 } 
 img {
     display: block;
-    max-width: 100%;   
+    @media screen and (max-width: 796px) {
+        max-width: 100%; 
+    }
 }
