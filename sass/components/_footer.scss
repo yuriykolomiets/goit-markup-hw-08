@@ -5,8 +5,11 @@
     padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         width: 100%;
+    }  
+    @media screen and (min-width: 768px) {
+        width: 768px;
     }  
     // justify-content: flex-start;
 }
@@ -29,30 +32,34 @@
         color: $active_color;
     }
 }
-// .logo-second:hover,
-// .logo-second:focus {
-    
-//     color: #2196F3
-// }
 .page-footer__conteiner{
-    // width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
-    margin-left: auto;
-    @media screen and (max-width: 480px) {
+        margin-left: auto;
+    @media screen and (max-width: 767px) {
         width: 100%;
+        
     }  
-    
-    
     // justify-content: flex-start;
 }
+.tablet-conteiner {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+}
 .address {
- width: 100%;
+    @media screen and (max-width: 767px) {
+    width: 100%;
  display: flex;
  flex-direction: column;
  margin-bottom: 60px;
-
+} 
+@media screen and (min-width: 768px) {
+    margin-right: 165px;
+} 
 }
 .address__text {
     font-style: normal;
@@ -60,12 +67,16 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    text-align: center;
     margin-bottom: 8px;
-
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    } 
 }
 .address__item {
-    text-align: center; 
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    } 
+    
 }
 .address__item:not(:last-child) {
     margin-bottom: 8px; 
@@ -138,21 +149,9 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .footer-society__link:hover {
-//     background-color: #2196F3;
+// .feedback {
+//      margin-left: 93px;
 // }
-// .footer-society__link:hover .footer-society__icon {
-//     fill: #FFFFFF;
-// }
-// .footer-society__link:focus {
-//     background-color: #2196F3;
-// }
-// .footer-society__link:focus .footer-society__icon {
-//     fill: #FFFFFF;
-// }
-.feedback {
-    // margin-left: 93px;
-}
 .feedback__text {
     display: block;
     font-weight: 700;
@@ -165,7 +164,16 @@
     margin-bottom: 20px;
 }
 .feedback__form {
-    text-align: center;
+    @media screen and (max-width: 767px) {
+       text-align: center;
+    } 
+    // text-align: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    } 
     // display: inline-flex;
     // align-items: center;
     // display: flex;

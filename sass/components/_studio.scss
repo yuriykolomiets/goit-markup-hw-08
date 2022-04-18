@@ -6,30 +6,37 @@
 }
 .staff__title {
     font-weight: 700;
-    font-size: 28px;
     line-height: 1.17;
-
     text-align: center;
     letter-spacing: 0.03em;
-    // font-weight: 700;
+
     // font-size: 36px;
-    // line-height: 1.17;
-    // text-align: center;
-    // letter-spacing: 0.03em;
+
     margin: 0;
     margin-bottom: 30px;
     color: #212121;
+    @media screen and (max-width: 1199px){
+        font-size: 28px;
+    }
 }
 .staff__list {
     display: flex;
     flex-wrap: wrap;
 }
 .staff__item {
-    width: 100%;
+    @media screen and (max-width: 767px){
+        width: 100%;
     margin-bottom: 30px;
     &:last-child {
         margin-bottom: 0px;
     }
+    }
+    @media screen and (min-width: 768px){
+        flex-basis: calc( 100% / 2 - 15px );
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    
     // margin-right: 30px;
     // &:last-child {
     //     margin-right: 0;
@@ -108,18 +115,6 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .society-list__link:hover {
-//     background-color: #2196F3;
-// }
-// .society-list__link:hover .society-list__icon {
-//     fill: #FFFFFF;
-// }
-// .society-list__link:focus {
-//     background-color: #2196F3;
-// }
-// .society-list__link:focus .society-list__icon {
-//     fill: #FFFFFF;
-// }
 .clients {
     background-color: #FFFFFF;
     padding-top: 60px;
@@ -186,19 +181,6 @@
         fill: $active_color;   
     }
 }
-// .clients__link:hover {
-//     border: 1px solid #2196F3; 
-// }
-// .clients__link:hover .clients__icon {
-//     fill: #2196F3;
-    
-// }
-// .clients__link:focus {
-//     border: 1px solid #2196F3; 
-// }
-// .clients__link:focus .clients__icon {
-//     fill: #2196F3;   
-// }
 .clients__icon {
     fill: #AFB1B8;
 
