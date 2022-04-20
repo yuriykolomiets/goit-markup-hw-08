@@ -192,19 +192,19 @@
     </h2>
         <ul class="activity__list">
 <li class="activity__item">
-    <img src="./image/222.jpg" width="370" alt="1" >
+    <img srcset="/image/222.jpg 1x, ./image/img-2x.jpg 2x" src="./image/222.jpg" width="370" alt="1" >
     <div class="activity__conteiner"> 
         <p class="activity__text">Десктопные приложение</p>
     </div>
 </li>
 <li class="activity__item">
-    <img src="./image/333.jpg" width="370" alt="2" >
+    <img srcset="./image/333.jpg 1x, ./image/img-3-2x.jpg 2x" src="./image/333.jpg" width="370" alt="2" >
     <div class="activity__conteiner"> 
         <p class="activity__text">Мобильные приложения</p>
     </div>
 </li>
 <li class="activity__item"> 
-    <img src="./image/444.jpg" width="370" alt="3" >
+    <img srcset="./image/444.jpg 1x, ./image/img-4-2x.jpg 2x" src="./image/444.jpg" width="370" alt="3" >
     <div class="activity__conteiner"> 
         <p class="activity__text">Дизайнерские решения</p>
     </div>
@@ -220,7 +220,7 @@
 </h2>
 <ul class="staff__list">
 <li class="staff__item">
-<img src="./image/666.jpg" width="100%" alt="Игорь Демьяненко">
+<img srcset="./image/666.jpg 1x, ./image/img-7-2x.jpg 2x" src="./image/666.jpg" width="100%" alt="Игорь Демьяненко">
 <div class="staff__conteiner">
     <h3 class="staff__name">
     Игорь Демьяненко
@@ -264,7 +264,7 @@
 </ul>   
 </div>
      <li class="staff__item">
-<img src="./image/555.jpg" width="100%" alt="Ольга Репина">
+<img srcset="./image/555.jpg 1x, ./image/img-5-2x.jpg 2x" src="./image/555.jpg" width="100%" alt="Ольга Репина">
 <div class="staff__conteiner">
 <h3 class="staff__name">
     Ольга Репина
@@ -309,7 +309,7 @@
 </div>
 </li>
 <li class="staff__item">
-<img src="./image/777.jpg" width="100%" alt="Николай Тарасов">
+<img srcset="./image/777.jpg 1x, ./image/img-6-2x.jpg 2x" src="./image/777.jpg" width="100%" alt="Николай Тарасов">
 <div class="staff__conteiner">
 <h3 class="staff__name">
     Николай Тарасов
@@ -354,7 +354,7 @@
 </div>
 </li>
 <li class="staff__item">
-<img src="./image/888.jpg" width="1000%" alt="Михаил Ермаков">
+<img srcset="./image/888.jpg 1x, ./image/img-4-2x.jpg 2x" src="./image/888.jpg" width="100%" alt="Михаил Ермаков">
 <div class="staff__conteiner">
 <h3 class="staff__name">
     Михаил Ермаков
@@ -454,6 +454,7 @@
     </ul>
 </div>
 </section>
+</main>
     <footer class="page-footer">
         <div class="page-footer__conteiner">
             <div class="tablet-conteiner">
@@ -509,7 +510,7 @@
     <p class="feedback__text">подпишитесь на рассылку</p> 
 
     <form class="feedback__form"> 
-    <label> 
+    <label class="feedback__label"> 
         <input type="email" class="feedback__input" placeholder="E-mail">
     </label>
     <button type="submit" class="feedback__submit">
@@ -519,7 +520,6 @@
 </div>
 </div>
 </footer>
-</main>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu2.js"></script>
 </body>
