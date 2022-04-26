@@ -14,24 +14,24 @@
 <body>
     <header class="page-header">
     <div class="conteiner navigation">       
-            <a href="#" class="logo"> <span class="web"> Web </span> Studio</a>
-            <div class="mobile-menu is-open" data-menu>
-                <button type="button" aria-expanded="true" class="mobile-menu__button-close" data-menu-close>
-                    <svg height="24" width="24" class="mobile-menu__icon">
-                        <use class="mobile-menu__icon-second" href="./image/symbol-close.svg#icon-close_24px"></use>
-                    </svg>
-                    </button>
-        <nav>
+            <a href="#" class="logo"> <span class="web">Web</span>Studio</a>
+            <div class="mobile-menu is-open js-menu-container" id="mobile-menu">
+                <nav class="site-navigation">
+            <button type="button" class="mobile-menu__close js-close-menu">
+            <svg height="24" width="24" class="mobile-menu__icon-close">
+                <use class="mobile-menu__icon-second" href="./image/symbol-close.svg#icon-close_24px"></use>
+            </svg>
+        </button>
            <ul class="nav-list">
             <li class="nav-list__item"><a href="./" class="nav-list__link">Студия</a> </li>
             <li class="nav-list__item"><a href="" class="nav-list__link nav-list__link-portfolio">Портфолио</a> </li>
             <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a> </li>
         </ul>
             
-        </nav>
+        
         <ul class="contact-list">
             <li class="contact-list__item">
-                 <a href="mailto:info@devstudio.com" class="contact-list__link-mail">
+                 <a href="mailto:info@devstudio.com" class="contact-list__link">
                     <svg class="icon-envelope" height="12px" width="16px">
                         <use href="./image/symbol-defs-3.svg#icon-envelope"></use>   
                     </svg>
@@ -39,7 +39,7 @@
                 </a>
             </li>
             <li class="contact-list__item">
-                <a href="ctel:+380961111111" class="contact-list__link-tel">
+                <a href="ctel:+380961111111" class="contact-list__link contact-list__link-tel">
                     <svg class="icon-smartphone" height="20px" width="20px">
                         <use href="./image/symbol-defs-3.svg#icon-smartphone"></use>   
                     </svg>
@@ -47,20 +47,22 @@
             </a>
         </li>
         </ul>
-        <ul class="contact-list__society">
-            <li class="contact-list__society-item"><a href="#" class="contact-list__society-link">Instagram</a></li>
-            <li class="contact-list__society-item"><a href="#" class="contact-list__society-link">Twitter</a></li>
-            <li class="contact-list__society-item"><a href="#" class="contact-list__society-link">Facebook</a></li>
-            <li class="contact-list__society-item"><a href="#" class="contact-list__society-link contact-list__society-last">Linkedin</a></li>
-        </ul>
-        </div>
-        <button type="button" aria-expanded="false" class="mobile-menu__button-open is-open" data-menu-open >
-            <svg height="24" width="24" class="mobile-menu__icon">
-                <use class="mobile-menu__icon-first" href="./image/symbol-close.svg#icon-menu_24px"></use>
-                <!-- <use class="mobile-menu__icon-second" href="./image/symbol-close.svg#icon-close_24px"></use> -->
-            </svg>
-        </button>
+    </ul>
+    <ul class="header-society__list">
+        <li class="header-society__item"><a href="#" class="header-society__link">Instagram <span class="header-society__icon"></span></a></li>
+        <li class="header-society__item"><a href="#" class="header-society__link">Twitter <span class="header-society__icon"></span></a></li>
+        <li class="header-society__item"><a href="#" class="header-society__link">Facebook <span class="header-society__icon"></span></a></li>
+        <li class="header-society__item"><a href="#" class="header-society__link">Linkedin <span class="header-society__icon header-society__icon-last"></span></a></li>
+    </ul>
+    </nav>
     </div>
+    <button type="button" class="mobile-menu__open js-open-menu" aria-expanded="false"
+    aria-controls="mobile-menu">
+    <svg height="24" width="24" class="mobile-menu__icon-open">
+        <use class="mobile-menu__icon-first" href="./image/symbol-close.svg#icon-menu_24px"></use>
+    </svg>
+</button>
+        </div>
     </header>
     <main>
              
@@ -77,7 +79,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-13.jpg 1x, ./image/img-8-2x.jpg 2x" src="./image/img-13.jpg" alt="computer" width="100%">
+                                <img srcset="./image/img-13.jpg 1x, ./image/img-9-2x.jpg 2x" src="./image/img-13.jpg" alt="computer" width="370">
                             
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -93,7 +95,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                            <div class="animation">
-                            <img srcset="./image/img-14.jpg 1x, ./image/img-9-2x.jpg 2x" src="./image/img-14.jpg" alt="nba" width="100%">
+                            <img srcset="./image/img-14.jpg 1x, ./image/img-10-2x.jpg 2x" src="./image/img-14.jpg" alt="nba" width="370">
                             <div class="animation__box">
                                 <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </p>
@@ -108,7 +110,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                         <div class="animation">
-                            <img srcset="./image/img-15.jpg 1x, ./image/img-2x.png 2x" src="./image/img-15.jpg" alt="seafood" width="100%">
+                            <img srcset="./image/img-15.jpg 1x, ./image/img-11-2x.jpg 2x" src="./image/img-15.jpg" alt="seafood" width="370">
                             <div class="animation__box">
                                 <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </p>
@@ -123,7 +125,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-16.jpg 1x, ./image/img-10-2x.jpg 2x" src="./image/img-16.jpg" alt="headphones" width="100%">
+                                <img srcset="./image/img-16.jpg 1x, ./image/img-12-2x.jpg 2x" src="./image/img-16.jpg" alt="headphones" width="370">
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -138,7 +140,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-17.jpg 1x, ./image/img-11-2x.jpg 2x" src="./image/img-17.jpg" alt="boxes" width="100%">
+                                <img srcset="./image/img-17.jpg 1x, ./image/img-13-2x.jpg 2x" src="./image/img-17.jpg" alt="boxes" width="370">
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -153,7 +155,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-18.jpg 1x, ./image/img-12-2x.jpg 2x" src="./image/img-18.jpg" alt="monitor" width="100%">
+                                <img srcset="./image/img-18.jpg 1x, ./image/img-14-2x.jpg 2x" src="./image/img-18.jpg" alt="monitor" width="370">
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -168,7 +170,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-19.jpg 1x, ./image/img-13-2x.jpg 2x" src="./image/img-19.jpg" alt="limited" width="100%">
+                                <img srcset="./image/img-19.jpg 1x, ./image/img-15-2x.jpg 2x" src="./image/img-19.jpg" alt="limited" width="370">
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -183,7 +185,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-20.jpg 1x, ./image/img-14-2x.jpg 2x" src="./image/img-20.jpg" alt="lab" width="100%">
+                                <img srcset="./image/img-20.jpg 1x, ./image/img-16-2x.jpg 2x" src="./image/img-20.jpg" alt="lab" width="370">
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -198,7 +200,7 @@
                     <li class="example-list__item">
                         <a class="example-list__link" href="#">
                             <div class="animation">
-                                <img srcset="./image/img-21.jpg 1x, ./image/img-15-2x.jpg 2x" src="./image/img-21.jpg" alt="notebook" width="100%">
+                                <img srcset="./image/img-21.jpg 1x, ./image/img-17-2x.jpg 2x" src="./image/img-21.jpg" alt="notebook" width="370">
                                 <div class="animation__box">
                                     <p class="animation__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -216,10 +218,11 @@
             
     </main>
     <footer class="page-footer">
+        <div class="conteiner">
         <div class="page-footer__conteiner">
-            <div class="tablet-conteiner">
+            <div class="tablet">
             <div class="address">
-        <a href="" class="logo-second"> <span class="web"> Web </span> Studio</a>     
+        <a href="" class="logo-second"> <span class="web">Web</span>Studio</a>     
     <address>
         <p class="address__text"> г. Киев, пр-т Леси Украинки, 26 </p>
         <ul class="address__list">
@@ -263,14 +266,14 @@
                     </svg>
                 </a>
             </li>
-        </ul> 
-    </div> 
+        </ul>  
 </div> 
+</div>
     <div class="feedback">
     <p class="feedback__text">подпишитесь на рассылку</p> 
 
     <form class="feedback__form"> 
-    <label> 
+    <label class="feedback-label"> 
         <input type="email" class="feedback__input" placeholder="E-mail">
     </label>
     <button type="submit" class="feedback__submit">
@@ -279,8 +282,9 @@
 </form>
 </div>
 </div>
+</div>
 </footer>
-<script src="./js/mobile-menu2.js"></script>      
+    <script src="./js/mobile-menu.js"></script>    
     </body>
    
        

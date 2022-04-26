@@ -1,0 +1,90 @@
+.clients {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+    padding-bottom: 94px
+    }
+}
+.clients__title { 
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    @media screen and (min-width: 768px){
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+}
+.clients__item {
+    height: 92px;
+    
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        flex-basis:calc(100 / 2 - 30px); 
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 768px){
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        
+    }
+   
+}
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+     
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        border: 1px solid $active_color; 
+    }
+    &:hover .clients__icon {
+        fill: $active_color;
+        
+    }
+    &:focus {
+        border: 1px solid $active_color; 
+    }
+    &:focus .clients__icon {
+        fill: $active_color;   
+    }
+    @media screen and (min-width: 320px){
+        width: 210px;              
+    }
+    @media screen and (min-width: 768px){
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 170px;
+    }
+}
+.clients__icon {
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

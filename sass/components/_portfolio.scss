@@ -1,51 +1,37 @@
 .example {
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        padding-top: 60px;
+    padding-top: 60px;
     padding-bottom: 60px;
-    }  
-    @media screen and (min-width: 768px) {
-        
-        padding-top: 60px;
-    padding-bottom: 60px;
-    } 
-    @media screen and (min-width: 1200px) {
-        
+    @media screen and (min-width: 1200px){
         padding-top: 94px;
     padding-bottom: 94px;
-    }  
+    }
 }
 .navigation-list {
     display: flex;
-
-    @media screen and (max-width: 767px) {
-        flex-wrap: wrap;
-    }  
-    @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px){
+        display: flex;
         justify-content: center;
-    }  
-    @media screen and (min-width: 1200px) {
-        justify-content: center;
-        margin-bottom: 56px;
-    } 
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+    }
 }
 .navigation-list__item {
     display: inline-block;
+    margin-bottom: 15px;
     
 }
-.navigation-list__item {
+.navigation-list__item:not(:last-child) {
     margin-right: 8px;
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 15px;
-        &:last-child {
-            margin-right: 0px;
-        }
-        &:nth-last-child(-n + 2) {
-            margin-bottom: 40px;
-        } 
-    } 
-}
 
+}
+.navigation-list__item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+}
 .navigation-list__button {
     font-family: inherit;
     font-weight: 500;
@@ -73,41 +59,42 @@
     background-color: #2196F3;
     color: #FFFFFF ;
     text-decoration: none;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+}
 }
 .example-list {
-    display: flex;
+    @media screen and (max-width: 767px){
+        display: flex;
     flex-wrap: wrap;
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        margin-top: -15px;
-    margin-left: -15px;
+    align-items: center;
+    flex-direction: column;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
         margin-top: -30px;
         margin-left: -30px;
-    } 
+    }
+    
+    
 }
 .example-list__item {
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        margin-bottom: 30px;
-    &:last-child {
-        margin-bottom: 0px;
-    } 
-    } 
-    @media screen and (min-width: 768px) {
-        flex-basis: calc( 100% / 2 - 15px );
-        margin-left: 15px;
-        margin-top: 15px;
-    } 
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc(100% / 3 - 30px);
-        margin-left: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 480px){
+        width: 450px;
+    }
+    @media screen and (min-width: 768px){
+        width: 354px;
+        flex-basis: calc(100 /2 - 30px);
         margin-top: 30px;
-    } 
-     
+        margin-left: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 370px;
+    }
 }
-.example-list__link {
+.example-list__link{
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,6 +110,8 @@
     transform: translateY(0);
 }
 }
+   
+
 .animation {
     position: relative;
     overflow: hidden;
@@ -142,6 +131,7 @@
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .animation__text {
     
     font-weight: 400;
@@ -160,14 +150,9 @@
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    @media screen and (max-width: 767px) {
-        width: 100%;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         height: 146px;
-    } 
-    @media screen and (min-width:768px) and (max-width: 1199px) {
-        width: 100%;
-        height: 146px;
-    } 
+    }
 
 }
 .example-box__title {
@@ -179,7 +164,7 @@
     color: #212121;
     margin-bottom: 4px;
 }
-.example-box__text {
+.example-box__text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -187,4 +172,3 @@
 
     color: $text-color;
 }
-
