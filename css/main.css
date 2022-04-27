@@ -421,6 +421,9 @@ img {
   .contact-list__link {
     font-size: 12px;
     line-height: 1.16;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
