@@ -3,10 +3,14 @@
     color: #FFFFFF;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-bottom: 0px;
+    }  
     }
-.page-footer__conteiner {
+.page-footer__conteiner { 
     @media screen and (min-width: 1200px){
         display: flex;
+        
     }    
 }
 .logo-second {

@@ -99,13 +99,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .page-header {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .navigation {
     width: 480px;
@@ -552,7 +545,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .nav-list__link-studio::after {
-    bottom: -27px;
+    bottom: -17px;
   }
 }
 
@@ -575,7 +568,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .nav-list__link-portfolio::after {
-    bottom: -27px;
+    bottom: -17px;
   }
 }
 
@@ -1242,6 +1235,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  text-transform: none;
 }
 
 .staff__text {
@@ -1689,6 +1683,12 @@ img {
   color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
