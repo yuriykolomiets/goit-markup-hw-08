@@ -158,6 +158,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     height: 100%;
     background-color: #FFFFFF;
     z-index: 999;
@@ -2003,7 +2004,7 @@ img {
   padding-left: 16px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 450px) and (max-width: 1199px) {
   .feedback__input {
     width: 450px;
   }
