@@ -25,6 +25,13 @@
 .clients__list {
     display: flex;
     flex-wrap: wrap;
+    
+    @media screen and (max-width: 479px){
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
     @media screen and (min-width: 480px) and (max-width: 768px){
         margin-left: -30px;
         margin-top: -30px;
@@ -36,8 +43,13 @@
 }
 .clients__item {
     height: 92px;
+    @media screen and (max-width: 479px){
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
     
-    @media screen and (min-width: 320px) and (max-width: 767px){
+    @media screen and (min-width: 480px) and (max-width: 767px){
         flex-basis:calc(100 / 2 - 30px); 
         margin-left: 30px;
         margin-top: 30px;
