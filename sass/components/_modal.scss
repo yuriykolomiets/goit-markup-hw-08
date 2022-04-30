@@ -82,7 +82,10 @@
      letter-spacing: 0.03em;
      margin-top: 0;
      margin-bottom: 12px;
-     color: #212121
+     color: #212121;
+     @media screen and (max-width: 479px){
+        font-size: 15px;
+    }
  }
 
  .label {

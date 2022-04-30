@@ -173,7 +173,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .mobile-menu {
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -852,6 +852,12 @@ img {
   margin-top: 0;
   margin-bottom: 12px;
   color: #212121;
+}
+
+@media screen and (max-width: 479px) {
+  .modal__title {
+    font-size: 15px;
+  }
 }
 
 .label {
